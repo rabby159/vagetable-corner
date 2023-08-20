@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +39,18 @@
                     <span id="small-count" class="badge badge-sm indicator-item">0</span>
                   </div>
                 </label>
-                <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-96 bg-base-100 shadow">
+                <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-100% bg-base-100 shadow">
                   <div class="card-body">
-                    <h4 class="font-bold text-lg border-b-2"><span id="items">0</span> Items</h4>
+                    <h4 class="font-bold text-lg "><span id="items">0</span> Items</h4>
+                    <div class="flex justify-between border-y-2 w-72">
+                        <div id="product-name">
+                            <h3>Name</h3>
+                        </div>
+                        
+                        <div>
+                            <h3>Price</h3>
+                        </div>
+                    </div>
 
                     <span class="">Total: $000</span>
                     <span class="">Discount: 25%</span>
@@ -79,13 +88,13 @@
                 <figure><img src="./images/basket-full-vegetables.jpg" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">
-                    Mixed Vegetable
-                    <div class="badge badge-success">Fresh</div>
+                    Mixed Vegetable                   
                   </h2>
+                  <div class="badge badge-success">Fresh</div>
                   <p>Ham & Mixed Vegetable Salad, Easy Pork Chops With Roasted Vegetables, Healthy Egg White.</p>
                   <h4 class="font-semibold text-red-500 text-lg">Price: $<span>10</span></h4>
                   <div class="card-actions justify-end">
-                    <button  id="cart" onclick="productCount(this)" class="btn btn-success cart">Add Cart</button>
+                    <button  id="cart" onclick="productCount(this)" class="btn btn-success cart" >Add Cart</button>
                   </div>
                 </div>
               </div>
@@ -95,12 +104,13 @@
                 <div class="card-body">
                   <h2 class="card-title">
                     Brinjal
-                    <div class="badge badge-success">Fresh</div>
+                    
                   </h2>
+                  <div class="badge badge-success">Fresh</div>
                   <p>Brinjal, also known as eggplant, is one of the most important, inexpensive.</p>
                   <h4 class="font-semibold text-red-500 text-lg">Price: $<span>6</span></h4>
                   <div class="card-actions justify-end">
-                    <button onclick="productCount(this)" class="btn btn-success cart">Add Cart</button>
+                    <button onclick="productCount(this)" class="btn btn-success cart" >Add Cart</button>
                   </div>
                 </div>
               </div>
@@ -110,12 +120,12 @@
                 <div class="card-body">
                   <h2 class="card-title">
                     Broccoli
-                    <div class="badge badge-success">Fresh</div>
-                  </h2>
+                </h2>
+                <div class="badge badge-success">Fresh</div>
                   <p>Broccoli is a cruciferous vegetable rich in nutrients. Possible health benefits.</p>
                   <h4 class="font-semibold text-red-500 text-lg">Price: $<span>4</span></h4>
                   <div class="card-actions justify-end">
-                    <button onclick="productCount(this)" class="btn btn-success cart">Add Cart</button>
+                    <button onclick="productCount(this)" class="btn btn-success cart" >Add Cart</button>
                   </div>
                 </div>
               </div>
@@ -125,12 +135,12 @@
                 <div class="card-body">
                   <h2 class="card-title">
                     Cabbage
-                    <div class="badge badge-success">Fresh</div>
                   </h2>
+                <div class="badge badge-success">Fresh</div>
                   <p>Cabbage, comprising several cultivars of Brassica oleracea, is a leafy green, red.</p>
                   <h4 class="font-semibold text-red-500 text-lg">Price: $<span>5</span></h4>
                   <div class="card-actions justify-end">
-                    <button onclick="productCount(this)" class="btn btn-success cart">Add Cart</button>
+                    <button onclick="productCount(this)" class="btn btn-success cart" >Add Cart</button>
                   </div>
                 </div>
               </div>
@@ -140,12 +150,12 @@
                 <div class="card-body">
                   <h2 class="card-title">
                     Potato
-                    <div class="badge badge-success">Fresh</div>
-                  </h2>
+                </h2>
+                <div class="badge badge-success">Fresh</div>
                   <p>The potato is a starchy food, a tuber of the plant Solanum tuberosum and is a root vegetable.</p>
                   <h4 class="font-semibold text-red-500 text-lg">Price: $<span>3</span></h4>
                   <div class="card-actions justify-end">
-                    <button onclick="productCount(this)" class="btn btn-success cart">Add Cart</button>
+                    <button onclick="productCount(this)" class="btn btn-success cart" >Add Cart</button>
                   </div>
                 </div>
               </div>
@@ -155,8 +165,8 @@
                 <div class="card-body">
                   <h2 class="card-title">
                     Tomato
-                    <div class="badge badge-success">Fresh</div>
-                  </h2>
+                </h2>
+                <div class="badge badge-success">Fresh</div>
                   <p>Tomatoes meet the botanical requirements to be classified as fruit, despite not sharing.</p>
                   <h4 class="font-semibold text-red-500 text-lg">Price: $<span>7</span></h4>
                   <div class="card-actions justify-end">
